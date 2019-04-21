@@ -1,9 +1,9 @@
 # Application Frais Mobile (Ionic + PHP)
 
-![connexion](http://danielpaul.fr/test/1.png)
-![fiche frais](http://danielpaul.fr/test/2.png)
-![detail](http://danielpaul.fr/test/3.png)
-![paramètres](http://danielpaul.fr/test/4.png)
+<img src="http://danielpaul.fr/test/1.png" alt="connexion" width="250"/>
+<img src="http://danielpaul.fr/test/2.png" alt="fiche frais" width="250"/>
+<img src="http://danielpaul.fr/test/3.png" alt="detail" width="250"/>
+<img src="http://danielpaul.fr/test/4.png" alt="Paramètres" width="250"/>
 
 Dans ce projet vous trouvez un exemple d'application frais mobile avec les fonctionnalités suivantes :
 
