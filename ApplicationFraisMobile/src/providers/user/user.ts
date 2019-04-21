@@ -13,9 +13,7 @@ export class User {
   prenom: string;
   nomUtilisateur: string;
 
-  url = 'http://localhost:8888/cours/bts/2/ApplicationFrais/ApplicationFrais/ApplicationFraisWeb/';
-
-  constructor(public api: Api, public http: HttpClient) { }
+  constructor(public api: Api) { }
 
   login(utilisateur: Utilisateur) {
     let httpParams = new HttpParams();
@@ -25,7 +23,7 @@ export class User {
       headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
     };
     
-    return this.http.post(this.url + 'connexion.php', httpParams, options);
+    return this.api.post('connexion.php', httpParams, options);
   }
 
   logout() {

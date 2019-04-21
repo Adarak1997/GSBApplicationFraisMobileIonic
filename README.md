@@ -1,9 +1,12 @@
 # Application Frais Mobile (Ionic + PHP)
 
-![connexion](http://danielpaul.fr/test/1.png)
-![fiche frais](http://danielpaul.fr/test/2.png)
-![detail](http://danielpaul.fr/test/3.png)
-![paramètres](http://danielpaul.fr/test/4.png)
+<p>
+<img align="left" width="175" alt="1" src="https://user-images.githubusercontent.com/9747815/56463863-18697f00-63dd-11e9-8233-954cea3d57d0.png">
+<img align="left" width="175" alt="2" src="https://user-images.githubusercontent.com/9747815/56463873-48188700-63dd-11e9-8135-21c4c40d2b38.png">
+<img align="left" width="175" alt="3" src="https://user-images.githubusercontent.com/9747815/56463874-48b11d80-63dd-11e9-90df-887ab330e81c.png">
+<img align="left" width="175" alt="4" src="https://user-images.githubusercontent.com/9747815/56463875-48b11d80-63dd-11e9-9c5f-4c0a37851ce7.png">
+</p>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 Dans ce projet vous trouvez un exemple d'application frais mobile avec les fonctionnalités suivantes :
 
@@ -17,7 +20,14 @@ Dans ce projet vous trouvez un exemple d'application frais mobile avec les fonct
 1. Cloner le projet dans **WAMP** ou **MAMP**
 2. Ouvrir le terminal puis naviguer jusqu'au dossier **ApplicationFraisMobile**
 3. Entrer la commande `npm install`
-4. Modifier la variable **url** dans les le dossier **providers** de l'application Ionic pour la faire correspondre avec l'arborescence de vos fichiers. Variable a modifier :
+4. Modifier la variable **url** dans le fichier api.ts de l'application Ionic pour la faire correspondre avec l'arborescence de vos fichiers.
+
+#### Emplacement du fichier :
+```shell
+ApplicationFraisMobile > src > providers > api
+  ```
+
+#### Variable à modifier :
 ```php
 url = 'http://localhost:8888/cours/bts/2/ApplicationFrais/ApplicationFrais/ApplicationFraisWeb/';
   ```
@@ -28,5 +38,40 @@ url = 'http://localhost:8888/cours/bts/2/ApplicationFrais/ApplicationFrais/Appli
 
 6. Adapter le code **PHP** pour qu'il se connecte correctement à votre base de données
 
-7. Tester l'application avec la commande: `ionic serve -l`
+7. Tester l'application web
+
+Exemple (ne pas oublier le paramètres GET):
+```bash
+http://localhost:8888/cours/bts/2/ApplicationFrais/GSBApplicationFraisMobileIonic/ApplicationFraisWeb/fiche_frais.php?utilisateur=1
+```
+
+Résultats de ce fichier :
+```json
+{  
+   fiches_frais:[  
+      {  
+         id:"5",
+         mois:"2",
+         annee:"2019"
+      },
+      {  
+         id:"4",
+         mois:"1",
+         annee:"2019"
+      },
+      {  
+         id:"1",
+         mois:"12",
+         annee:"2018"
+      },
+      {  
+         id:"3",
+         mois:"11",
+         annee:"2018"
+      }
+   ]
+}
+```
+
+7. Tester l'application mobile avec la commande: `ionic serve -l`
       

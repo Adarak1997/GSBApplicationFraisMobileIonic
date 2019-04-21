@@ -27,7 +27,7 @@ export class FicheFraisPage {
     public ficheFraisProvider: FicheFraisProvider) {
       
       ficheFraisProvider.getAll().subscribe((datas) =>{
-        this.ficheFrais = datas as Array<FicheFrais>;
+        this.ficheFrais = datas['fiches_frais'] as Array<FicheFrais>;
         this.total = this.ficheFrais.length;
       });
     }
@@ -38,7 +38,7 @@ export class FicheFraisPage {
     
     refresh() {
       this.ficheFraisProvider.getAll().subscribe((datas) =>{
-        this.ficheFrais = datas as Array<FicheFrais>;
+        this.ficheFrais = datas['fiches_frais'] as Array<FicheFrais>;
         this.total = this.ficheFrais.length;
       });
     }

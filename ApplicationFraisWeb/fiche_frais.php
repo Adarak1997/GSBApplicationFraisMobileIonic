@@ -15,9 +15,9 @@ $fiches = $query->fetchAll();
 
 $retour = [];
 for ($i=0; $i < count($fiches); $i++) {
-      $retour[$i]['id'] = $fiches[$i]['id'];
-      $retour[$i]['mois'] = $fiches[$i]['mois'];
-      $retour[$i]['annee'] = $fiches[$i]['annee'];
+      $retour['fiches_frais'][$i]['id'] = $fiches[$i]['id'];
+      $retour['fiches_frais'][$i]['mois'] = $fiches[$i]['mois'];
+      $retour['fiches_frais'][$i]['annee'] = $fiches[$i]['annee'];
 }
 
 

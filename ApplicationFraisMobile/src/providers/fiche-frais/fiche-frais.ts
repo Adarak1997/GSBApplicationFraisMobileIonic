@@ -1,3 +1,4 @@
+import { Api } from './../api/api';
 import { User } from './../user/user';
 import { FicheFrais } from './../../models/fichefrais';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
@@ -12,18 +13,16 @@ and Angular DI.
 @Injectable()
 export class FicheFraisProvider {
   
-  constructor(public http: HttpClient, public userService: User) {
+  constructor(public api: Api, public userService: User) {
     console.log('Hello FicheFraisProvider Provider');
   }
 
-  url = 'http://localhost:8888/cours/bts/2/ApplicationFrais/ApplicationFrais/ApplicationFraisWeb/';
-  
   getAll(){
-    return this.http.get(this.url + 'fiche_frais.php?utilisateur=' + this.userService.utilisateurId);
+    return this.api.get('fiche_frais.php?utilisateur=' + this.userService.utilisateurId);
   }
 
   
   getDetailById(id: string) {
-    return this.http.get(this.url + 'detail.php?fiche_frais_id=' + id);
+    return this.api.get('detail.php?fiche_frais_id=' + id);
   }
 }
