@@ -74,4 +74,3 @@ Résultats de ce fichier :
 ```
 
 7. Tester l'application mobile avec la commande: `ionic serve -l`
-      
