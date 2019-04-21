@@ -1,9 +1,12 @@
 # Application Frais Mobile (Ionic + PHP)
 
-<img width="308" alt="1" src="https://user-images.githubusercontent.com/9747815/56463863-18697f00-63dd-11e9-8233-954cea3d57d0.png">
-<img width="308" alt="2" src="https://user-images.githubusercontent.com/9747815/56463873-48188700-63dd-11e9-8135-21c4c40d2b38.png">
-<img width="306" alt="3" src="https://user-images.githubusercontent.com/9747815/56463874-48b11d80-63dd-11e9-90df-887ab330e81c.png">
-<img width="306" alt="4" src="https://user-images.githubusercontent.com/9747815/56463875-48b11d80-63dd-11e9-9c5f-4c0a37851ce7.png">
+<p>
+<img align="left" width="175" alt="1" src="https://user-images.githubusercontent.com/9747815/56463863-18697f00-63dd-11e9-8233-954cea3d57d0.png">
+<img align="left" width="175" alt="2" src="https://user-images.githubusercontent.com/9747815/56463873-48188700-63dd-11e9-8135-21c4c40d2b38.png">
+<img align="left" width="175" alt="3" src="https://user-images.githubusercontent.com/9747815/56463874-48b11d80-63dd-11e9-90df-887ab330e81c.png">
+<img align="left" width="175" alt="4" src="https://user-images.githubusercontent.com/9747815/56463875-48b11d80-63dd-11e9-9c5f-4c0a37851ce7.png">
+</p>
+
 
 Dans ce projet vous trouvez un exemple d'application frais mobile avec les fonctionnalités suivantes :
 
